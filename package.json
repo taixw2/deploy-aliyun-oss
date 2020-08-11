@@ -25,7 +25,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.4"
+    "@actions/core": "^1.2.4",
+    "ali-oss": "^6.10.0",
+    "glob": "^7.1.6"
   },
   "devDependencies": {
     "@types/jest": "^26.0.7",

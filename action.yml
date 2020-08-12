@@ -1,11 +1,35 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: deploy-aliyun-oss
+description: Provide a description here
+author: taixw2
 inputs:
-  milliseconds: # change this
+  region:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: the bucket data region location
+  access-key-id:
+    required: true
+    description: access key
+  access-key-secret:
+    required: true
+    description: access secret
+  bucket:
+    required: true
+    description: bucket
+  secure:
+    required: true
+    description: access secret
+    default: 'true'
+  entry:
+    required: true
+    description: entry
+    default: dist/**/*
+  remote-dir:
+    required: true
+    description: remote-dir
+    default: /
+  path-rewrite:
+    required: true
+    description: path-rewrite
+    default: ^dist/
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: node12
+  main: dist/index.js

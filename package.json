@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
+  "name": "deploy-aliyun-pss",
   "version": "0.0.0",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "Deploy to aliyun OSS action",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
